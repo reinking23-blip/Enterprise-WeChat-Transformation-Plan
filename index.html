@@ -2,10 +2,13 @@
 <html lang="zh-CN" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
+    <meta name="referrer" content="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>销售团队数字化转型 - 企业微信实施规划</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    
     <script>
       tailwind.config = {
         theme: {
@@ -28,6 +31,7 @@
     </script>
     <style>
       body { background-color: #f5f7fa; }
+      /* 滚动条美化 */
       ::-webkit-scrollbar { width: 8px; }
       ::-webkit-scrollbar-track { background: transparent; }
       ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
@@ -35,9 +39,10 @@
       .scrollbar-hide::-webkit-scrollbar { display: none; }
       .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
-    </head>
+  </head>
   <body>
     <div id="root"></div>
+    
     <script type="module" src="index.tsx"></script>
   </body>
 </html>
