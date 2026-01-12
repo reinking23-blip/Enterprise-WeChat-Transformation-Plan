@@ -20,10 +20,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          # 删除了 cache: 'npm'，避免因缺少 package-lock.json 而报错
 
       - name: Install dependencies
-        run: npm install
+        # 使用 --legacy-peer-deps 解决可能存在的 React 19 依赖冲突
+        run: npm install --legacy-peer-deps
 
       - name: Build
         run: npm run build
