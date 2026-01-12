@@ -198,7 +198,7 @@ export const modules: ModuleData[] = [
           "https://i0.hdslb.com/bfs/openplatform/d3287c241085f3f5612384939d2dcc10cf84ef95.png",
           "https://i0.hdslb.com/bfs/openplatform/22fece5ce7fb7229c8c77cb1d66886a79a161c82.png",
           "https://i0.hdslb.com/bfs/openplatform/0e3b42e1b8a5139785d64c20eec4b178fa6f331f.png",
-          "https://i0.hdslb.com/bfs/openplatform/aec1ce39d0f7ff61298bbe37bfbb0c01c2326ce5.png"
+          "https://i0.hdslb.com/bfs/openplatform/4ac8c815ed1f15cb3139af446577fa933f112738.png"
         ]
       },
       {

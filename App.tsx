@@ -203,10 +203,10 @@ const App: React.FC = () => {
       <button
         onClick={handleExportPPT}
         disabled={isExporting}
-        className={`fixed bottom-8 right-8 z-[60] flex items-center gap-3 px-6 py-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-105 active:scale-95 ${
+        className={`group fixed bottom-8 right-8 z-[60] flex items-center rounded-full shadow-2xl transition-all duration-500 active:scale-95 ${
           isExporting 
-            ? "bg-slate-100 text-slate-400 cursor-not-allowed border border-slate-200" 
-            : "bg-slate-900 text-white hover:bg-brand-600 hover:shadow-brand-500/30"
+            ? "bg-slate-100 text-slate-400 cursor-not-allowed border border-slate-200 px-6 py-4 gap-3" 
+            : "bg-slate-900 text-white hover:bg-brand-600 hover:shadow-brand-500/30 p-4 hover:px-6"
         }`}
       >
         {isExporting ? (
@@ -216,8 +216,10 @@ const App: React.FC = () => {
           </>
         ) : (
           <>
-            <Download size={20} />
-            <span className="font-bold text-sm tracking-wide">导出 PPT</span>
+            <Download size={20} className="shrink-0" />
+            <span className="max-w-0 opacity-0 overflow-hidden group-hover:max-w-[10em] group-hover:opacity-100 group-hover:ml-3 transition-all duration-500 font-bold text-sm tracking-wide whitespace-nowrap">
+              导出 PPT
+            </span>
           </>
         )}
       </button>
